@@ -2,7 +2,7 @@ import express from "express"
 import cors from "cors"
 import path from "path"
 import mongoose from "mongoose"
-//import router from 
+import router from "./router"
 
 // CONEXION A LA BASE DE DATOS
 
@@ -23,8 +23,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}))
 app.use(express.static(path.join(__dirname,'public')));
-
-//app.use('api/',router)
+app.use('api/',router)
 
 //seteamos el puerto a usar
 app.set('port', process.env.PORT || 3000 );
