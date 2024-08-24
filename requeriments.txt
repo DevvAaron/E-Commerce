@@ -9,3 +9,14 @@ npm i body-parse
 npm i cors
 npm i connect-multiparty
 npm i express-promise-router
+
+
+//Levantar el servicio
+npm run start
+
+//Generar nuevo proyecto en angularCLI
+ng new ecommerce
+
+
+//Iniciar proyecto angular
+ng serve --port:5000 para el cliente
