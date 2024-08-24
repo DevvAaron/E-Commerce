@@ -1,0 +1,11 @@
+npm init
+npm i express
+npm i -D @babel/cli @babel/core @babel/preset-env @babel/node
+npm i nodemon
+npm i mongoose
+npm i jsonwebtoken
+npm i bcryptjs
+npm i body-parse 
+npm i cors
+npm i connect-multiparty
+npm i express-promise-router
