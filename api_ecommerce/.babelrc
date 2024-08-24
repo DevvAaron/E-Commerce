@@ -1,7 +1,7 @@
 {
     "presets": [
         ["@babel/env",{
-            "targers": {
+            "targets": {
                 "node":"current"
             }
         }]
