@@ -1,0 +1,33 @@
+body{
+    overflow-x: hidden;
+}
+
+#sub{
+    font-size: .9rem;
+    color: #818181;
+}
+
+.btn{
+    background-color: rgb(230, 138, 0);
+    border-color: rgb(230, 138, 0);
+    color: #fff !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    background-color: rgb(199, 120, 2);
+    border-color: rgb(199, 120, 2);
+}
+
+#forgot{
+    text-decoration: none;
+    color: rgb(199, 120, 2);
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+#forgot:hover{
+    color: rgb(230, 138, 0);
+}
