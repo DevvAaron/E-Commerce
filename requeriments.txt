@@ -16,9 +16,15 @@ npm run start
 
 //Generar nuevo proyecto en angularCLI
 ng new ecommerce
-ng generate module app-routing --flat --module=app
-ng g m modules/nombre-modulo-a-crear --routing
-ng g c modules/nombre-modulo-a-crear 
+ng generate module app-routing --flat --module=app 
+ng g m modules/nombre-modulo-a-crear --routing --skip-tests
+ng g c modules/nombre-modulo-a-crear --skip-tests
+
+//Crear un servicio
+ng g s modules/auth-profile/_service/auth --skip-tests
+
+//Crear un guard 
+ng g g modules/auth-profile/_service/auth --skip-tests
 
 //Iniciar proyecto angular
 ng serve --port:5000 para el cliente
