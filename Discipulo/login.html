@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <div class="row m-lg-2 align-items-center p-3">
+        <div class="row align-items-center p-3">
             <!-- Logo a la Izquierda -->
             <div class="col-sm-6 col-md-2 mb-3 mb-lg-0">
                 <a href="#"><img class="img-fluid" src="Assets/images/logo.jpg" alt="logo"></a>
@@ -22,8 +22,9 @@
             <!-- Boton de Registro -->
             <div class="col-sm-6 col-md-10">
                 <div class="d-flex justify-content-between justify-content-md-end align-items-center">
-                    <p class="head-text m-0 me-3">No estás registrado?</p>
+                    <p id="btn-text" class="head-text m-0 me-3">No estás registrado?</p>
                     <button id="Register-btn" class="btn px-4">Registrate Ya!</button>
+                    <button id="Login-btn" class="btn px-4">Iniciar Sesión!</button>
                 </div>
             </div>
         </div>
@@ -37,30 +38,74 @@
 
             <!-- Columna derecha (Formulario) -->
             <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
-                <div class="container px-4 py-5 m-3 rounded border shadow-sm align-items-center">
-                    <h2>Iniciar Sesión</h2>
-                    <p id="sub" class="mb-4">Ingrese tu datos a continuación</p>
+                <div class="container p-4 m-3 rounded border shadow-sm align-items-center">
+                    <h2 id="title">Iniciar Sesión</h2>
+                    <p id="sub" class="mb-3">Ingresa tus datos a continuación</p>
 
-                    <form action="#">
-                        <div class="form-group mb-4">
-                            <label class="mb-1" for="email">Correo</label>
-                            <input type="email" class="form-control" name="email" placeholder="Ingrese su correo eléctronico" required autocomplete="off">
-                        </div>
-
-                        <div class="form-group mb-4">
-                            <label class="mb-1" for="password">Contraseña</label>
-                            <input type="password" class="form-control" name="password" placeholder="Ingrese su Contraseña" required autocomplete="off">
-                        </div>
-
-                        <div class="mt-5 d-flex align-items-center justify-content-between">
-                            <input type="submit" class="btn px-4" value="Ingresar">
-                            <a id="forgot" class="m-0 text-end" href="#">Olvidaste tu Contraseña?</a>
-                        </div>
+                    <div class="form-container" id="form-container">
                         
-                    </form>
+                        <form action="#" id="form-login">
+                            <div class="form-group mb-4">
+                                <label class="mb-1" for="email">Correo</label>
+                                <input type="email" class="form-control" name="email" placeholder="Ingrese su correo eléctronico" required autocomplete="off">
+                            </div>
+    
+                            <div class="form-group mb-3">
+                                <label class="mb-1" for="password">Contraseña</label>
+                                <input type="password" class="form-control" name="password" placeholder="Ingrese su Contraseña" required autocomplete="off">
+                            </div>
+    
+                            <div class="mt-4 d-flex align-items-center justify-content-between">
+                                <input type="submit" class="btn px-4" value="Ingresar">
+                                <a id="forgot" class="m-0 text-end" href="#">Olvidaste tu Contraseña?</a>
+                            </div>
+                            
+                        </form>
+    
+                        <form action="#" id="form-register">
+                            <div class="d-flex mb-3 w-100">
+                                <div class="form-group pe-2 col-6">
+                                    <label class="mb-1" for="name">Nombre</label>
+                                    <input type="text" class="form-control" name="name" placeholder="Ingrese su nombre" required autocomplete="off">
+                                </div>
+    
+                                <div class="form-group col-6">
+                                    <label class="mb-1" for="lastname">Apellido</label>
+                                    <input type="text" class="form-control" name="lastname" placeholder="Ingrese su Apellido" required autocomplete="off">
+                                </div>
+                            </div>
+    
+                            <div class="form-group mb-3">
+                                <label class="mb-1" for="email">Correo</label>
+                                <input type="email" class="form-control" name="email-register" placeholder="Ingrese su correo eléctronico" required autocomplete="off">
+                            </div>
+    
+                            <div class="form-group mb-3">
+                                <label class="mb-1" for="password">Teléfono</label>
+                                <input type="number" class="form-control" name="password-register" placeholder="Ingrese su número de teléfono" required autocomplete="off">
+                            </div>
+    
+                            <div class="form-group mb-3">
+                                <label class="mb-1" for="password">Contraseña</label>
+                                <input type="password" class="form-control" name="password-register" placeholder="Ingrese su Contraseña" required autocomplete="off">
+                            </div>
+    
+                            <div class="form-group mb-3">
+                                <label class="mb-1" for="password">Verificación de contraseña</label>
+                                <input type="password" class="form-control" name="ver-password-register" placeholder="Vuelva a ingresar su contraseña" required autocomplete="off">
+                            </div>
+    
+                            <div class="mt-4 d-flex align-items-center justify-content-between">
+                                <input type="submit" class="btn px-4 w-100" value="Registrar">
+                            </div>
+                            
+                        </form>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </main>
+    <script src="Assets/js/login.js"></script>
 </body>
 </html>
