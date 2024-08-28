@@ -11,6 +11,10 @@ body{
     color: #818181;
 }
 
+#lbl-check{
+    font-size: 1rem;
+}
+
 .btn{
     background-color: rgb(230, 138, 0);
     border-color: rgb(230, 138, 0);
@@ -24,7 +28,7 @@ body{
     border-color: rgb(199, 120, 2);
 }
 
-#forgot{
+#forgot, #term{
     text-decoration: none;
     color: rgb(199, 120, 2);
     font-weight: 600;
@@ -32,7 +36,11 @@ body{
     transition: color 0.3s ease-in-out;
 }
 
-#forgot:hover{
+#term{
+    text-decoration: underline;
+}
+
+#forgot:hover, #term:hover{
     color: rgb(230, 138, 0);
 }
 
