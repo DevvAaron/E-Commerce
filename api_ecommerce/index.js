@@ -7,7 +7,7 @@ import router from "./router"
 // CONEXION A LA BASE DE DATOS
 
 mongoose.Promise = global.Promise;
-const dbURL = "mongodb://127.0.0.1:27017/ecommerce_udemy";
+const dbURL = "mongodb://127.0.0.1:27017/Santti";
 mongoose.connect(
     dbURL
 ).then(mongoose => console.log("CONECTASTE CON EXITO A LA BASE DE DATOS"))
